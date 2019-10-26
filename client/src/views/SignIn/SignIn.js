@@ -11,6 +11,7 @@ import {
   Link,
   Typography
 } from '@material-ui/core';
+
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 import { Facebook as FacebookIcon, Google as GoogleIcon } from 'icons';
@@ -45,7 +46,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   quote: {
-    backgroundColor: 'lightgrey',
+    backgroundColor: 'lightblue',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
@@ -192,12 +193,20 @@ const SignIn = props => {
         >
           <div className={classes.quote}>
             <div className={classes.quoteInner}>
+            <img
+       style= {{height: '200px'}}
+        alt="Logo"
+        src="/images/logos/Ch@.png"
+          />
+          <br/>
+          <br/>
               <Typography
                 className={classes.quoteText}
                 variant="h1"
               >
                Welcome back, Enjoy your Ch@!!!
               </Typography>
+             
               <div className={classes.person}>
                 <Typography
                   className={classes.name}
@@ -205,9 +214,11 @@ const SignIn = props => {
                 >
                   The Dev Team:
                 </Typography>
+                <br/>
                 <Typography
                   className={classes.bio}
                   variant="body1"
+                  fontWeight="fontWeightBold"
                 >
                   Daniel Cho -
                   Ryan Wiengart -
@@ -215,6 +226,8 @@ const SignIn = props => {
                   Trey Helmer 
                  
                 </Typography>
+
+               
               </div>
             </div>
           </div>

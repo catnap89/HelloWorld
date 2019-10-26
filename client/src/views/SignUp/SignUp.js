@@ -61,7 +61,7 @@ const useStyles = makeStyles(theme => ({
     }
   },
   quote: {
-    backgroundColor: 'lightgrey',
+    backgroundColor: 'lightblue',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
@@ -206,6 +206,14 @@ const SignUp = props => {
         >
           <div className={classes.quote}>
             <div className={classes.quoteInner}>
+
+            <img
+       style= {{height: '200px'}}
+        alt="Logo"
+        src="/images/logos/Ch@.png"
+          />
+          <br/>
+          <br/>
               <Typography
                 className={classes.quoteText}
                 variant="h1"
