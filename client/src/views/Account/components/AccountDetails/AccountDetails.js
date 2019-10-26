@@ -23,12 +23,12 @@ const AccountDetails = props => {
   const classes = useStyles();
 
   const [values, setValues] = useState({
-    firstName: 'Shen',
-    lastName: 'Zhi',
-    email: 'shen.zhi@devias.io',
-    phone: '',
-    state: 'Alabama',
-    country: 'USA'
+    firstName: '',
+    lastName: '',
+    email: '',
+    // phone: '',
+    // state: '',
+    country: ''
   });
 
   const handleChange = event => {
@@ -38,20 +38,20 @@ const AccountDetails = props => {
     });
   };
 
-  const states = [
-    {
-      value: 'alabama',
-      label: 'Alabama'
-    },
-    {
-      value: 'new-york',
-      label: 'New York'
-    },
-    {
-      value: 'san-francisco',
-      label: 'San Francisco'
-    }
-  ];
+  // const states = [
+  //   {
+  //     value: 'alabama',
+  //     label: 'Alabama'
+  //   },
+  //   {
+  //     value: 'new-york',
+  //     label: 'New York'
+  //   },
+  //   {
+  //     value: 'san-francisco',
+  //     label: 'San Francisco'
+  //   }
+  // ];
 
   return (
     <Card
@@ -97,6 +97,7 @@ const AccountDetails = props => {
               <TextField
                 fullWidth
                 label="Last name"
+                helperText="Please specify the Last name"
                 margin="dense"
                 name="lastName"
                 onChange={handleChange}
@@ -113,6 +114,7 @@ const AccountDetails = props => {
               <TextField
                 fullWidth
                 label="Email Address"
+                helperText="Please specify the Email address"
                 margin="dense"
                 name="email"
                 onChange={handleChange}
@@ -121,12 +123,12 @@ const AccountDetails = props => {
                 variant="outlined"
               />
             </Grid>
-            <Grid
+            {/* <Grid
               item
               md={6}
               xs={12}
-            >
-              <TextField
+            > */}
+              {/* <TextField
                 fullWidth
                 label="Phone Number"
                 margin="dense"
@@ -135,14 +137,14 @@ const AccountDetails = props => {
                 type="number"
                 value={values.phone}
                 variant="outlined"
-              />
-            </Grid>
-            <Grid
+              /> */}
+            {/* </Grid> */}
+            {/* <Grid
               item
               md={6}
               xs={12}
-            >
-              <TextField
+            > */}
+              {/* <TextField
                 fullWidth
                 label="Select State"
                 margin="dense"
@@ -163,8 +165,8 @@ const AccountDetails = props => {
                     {option.label}
                   </option>
                 ))}
-              </TextField>
-            </Grid>
+              </TextField> */}
+            {/* </Grid> */}
             <Grid
               item
               md={6}
@@ -173,6 +175,7 @@ const AccountDetails = props => {
               <TextField
                 fullWidth
                 label="Country"
+                helperText="Please specify the Country"
                 margin="dense"
                 name="country"
                 onChange={handleChange}
