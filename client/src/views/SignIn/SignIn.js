@@ -14,7 +14,7 @@ import {
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import { Facebook as FacebookIcon, Google as GoogleIcon } from 'icons';
+import { Google as GoogleIcon } from 'icons';
 
 const schema = {
   email: {

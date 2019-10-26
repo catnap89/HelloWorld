@@ -10,14 +10,13 @@ import {
   Grid,
   Divider
 } from '@material-ui/core';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import GetAppIcon from '@material-ui/icons/GetApp';
+
 
 const useStyles = makeStyles(theme => ({
   root: {},
   imageContainer: {
-    height: 64,
-    width: 64,
+    height: 60,
+    width: 60,
     margin: '0 auto',
     border: `1px solid ${theme.palette.divider}`,
     borderRadius: '5px',
@@ -50,13 +49,13 @@ const ProductCard = props => {
       className={clsx(classes.root, className)}
     >
       <CardContent>
-        <div className={classes.imageContainer}>
-          <img
+        {/* <div className={classes.imageContainer}> */}
+          {/* <img
             alt="Product"
             className={classes.image}
             src={product.imageUrl}
-          />
-        </div>
+          /> */}
+        {/* </div> */}
         <Typography
           align="center"
           gutterBottom
@@ -77,30 +76,7 @@ const ProductCard = props => {
           container
           justify="space-between"
         >
-          <Grid
-            className={classes.statsItem}
-            item
-          >
-            <AccessTimeIcon className={classes.statsIcon} />
-            <Typography
-              display="inline"
-              variant="body2"
-            >
-              Updated 2hr ago
-            </Typography>
-          </Grid>
-          <Grid
-            className={classes.statsItem}
-            item
-          >
-            <GetAppIcon className={classes.statsIcon} />
-            <Typography
-              display="inline"
-              variant="body2"
-            >
-              {product.totalDownloads} Downloads
-            </Typography>
-          </Grid>
+       
         </Grid>
       </CardActions>
     </Card>
