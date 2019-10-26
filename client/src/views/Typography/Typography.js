@@ -9,12 +9,12 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const variants = {
-  h1: 'Nisi euismod ante senectus consequat phasellus ut',
-  h2: 'Nisi euismod ante senectus consequat phasellus ut',
-  h3: 'Nisi euismod ante senectus consequat phasellus ut',
-  h4: 'Nisi euismod ante senectus consequat phasellus ut',
-  h5: 'Nisi euismod ante senectus consequat phasellus ut',
-  h6: 'Nisi euismod ante senectus consequat phasellus ut',
+  // h1: 'Nisi euismod ante senectus consequat phasellus ut',
+  // h2: 'Nisi euismod ante senectus consequat phasellus ut',
+  // h3: 'Nisi euismod ante senectus consequat phasellus ut',
+  // h4: 'Nisi euismod ante senectus consequat phasellus ut',
+  // h5: 'Nisi euismod ante senectus consequat phasellus ut',
+  // h6: 'Nisi euismod ante senectus consequat phasellus ut',
   subtitle1: 'Leo varius justo aptent arcu urna felis pede nisl',
   subtitle2: 'Leo varius justo aptent arcu urna felis pede nisl',
   body1:

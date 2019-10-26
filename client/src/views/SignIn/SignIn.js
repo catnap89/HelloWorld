@@ -253,20 +253,21 @@ const SignIn = props => {
                   className={classes.title}
                   variant="h2"
                 >
-                  Sign in
+                  Sign in:
                 </Typography>
-                <Typography
+                {/* <br/> */}
+                {/* <Typography
                   color="textSecondary"
                   gutterBottom
                 >
                   Sign in with social media
-                </Typography>
+                </Typography> */}
                 <Grid
                   className={classes.socialButtons}
                   container
                   spacing={2}
                 >
-                  <Grid item>
+                  {/* <Grid item>
                     <Button
                       color="primary"
                       onClick={handleSignIn}
@@ -276,7 +277,7 @@ const SignIn = props => {
                       <FacebookIcon className={classes.socialIcon} />
                       Login with Facebook
                     </Button>
-                  </Grid>
+                  </Grid> */}
                   <Grid item>
                     <Button
                       onClick={handleSignIn}
@@ -289,13 +290,14 @@ const SignIn = props => {
                   </Grid>
                 </Grid>
                 <Typography
-                  align="center"
+                  align="left"
                   className={classes.sugestion}
                   color="textSecondary"
                   variant="body1"
                 >
                   or login with email address
                 </Typography>
+                <br/>
                 <TextField
                   className={classes.textField}
                   error={hasError('email')}

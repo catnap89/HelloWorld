@@ -263,8 +263,9 @@ const SignUp = props => {
                   className={classes.title}
                   variant="h2"
                 >
-                  Create new account
+                  Create new account:
                 </Typography>
+                <br/>
                 <Typography
                   color="textSecondary"
                   gutterBottom
@@ -327,6 +328,7 @@ const SignUp = props => {
                   value={formState.values.password || ''}
                   variant="outlined"
                 />
+                
                 <div className={classes.policy}>
                   <Checkbox
                     checked={formState.values.policy || false}

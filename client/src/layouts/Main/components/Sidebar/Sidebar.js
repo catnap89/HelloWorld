@@ -64,7 +64,7 @@ const Sidebar = props => {
       icon: <LockOpenIcon />
     },
     {
-      title: 'Typography',
+      title: 'Typography/About Us',
       href: '/typography',
       icon: <TextFieldsIcon />
     },
