@@ -69,7 +69,7 @@ const Sidebar = props => {
       icon: <TextFieldsIcon />
     },
     {
-      title: 'Icons',
+      title: 'Icons/Whisper-it',
       href: '/icons',
       icon: <ImageIcon />
     },
