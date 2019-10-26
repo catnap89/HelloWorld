@@ -41,23 +41,25 @@ const Topbar = props => {
       <Toolbar>
         <RouterLink to="/">
 
-          <Typography 
+          {/* <Typography 
             style = {{
             // Some CSS
               color: 'white',
               fontWeight: 'bold'
             }}
             
-            variant="h1"
-          >
-                            Ch@
-          </Typography>
-{/*                 
-          <img
-            alt="Logo"
+            variant="h2"
+          
             
-            src="/images/logos/logo--white.svg"
-          /> */}
+          >
+                         Ch@
+          </Typography>
+               */}
+       <img
+       style= {{height: '70px'}}
+        alt="Logo"
+        src="/images/logos/Ch@.png"
+          />
         </RouterLink>
         <div className={classes.flexGrow} />
         <Hidden mdDown>
