@@ -10,31 +10,31 @@ export default [
   },
   {
     id: uuid(),
-    title: 'Medium Corporation',
+    title: 'Coding Chat',
     description:
-      'Medium is an online publishing platform developed by Evan Williams, and launched in August 2012.',
+      'Get in here so we can talk about code, i really need serious help.',
     
   },
   {
     id: uuid(),
-    title: 'Slack',
+    title: 'Crazy Talk',
     description:
-      'Slack is a cloud-based set of team collaboration tools and services, founded by Stewart Butterfield.',
+      'Were all crazy, you crazy, yo momma crazy, yo daddy crazy, well what say you',
    
   },
-  {
-    id: uuid(),
-    title: 'Lyft',
-    description:
-      'Lyft is an on-demand transportation company based in San Francisco, California.',
+  // {
+  //   id: uuid(),
+  //   title: 'Lyft',
+  //   description:
+  //     'Lyft is an on-demand transportation company based in San Francisco, California.',
    
-  },
-  {
-    id: uuid(),
-    title: 'GitHub',
-    description:
-      'GitHub is a web-based hosting service for version control of code using Git.',
+  // },
+  // {
+  //   id: uuid(),
+  //   title: 'GitHub',
+  //   description:
+  //     'GitHub is a web-based hosting service for version control of code using Git.',
    
-  }, 
+  // }, 
  
 ];
