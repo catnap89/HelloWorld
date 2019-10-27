@@ -29,12 +29,16 @@ const Chatbox = props => {
 
   const classes = useStyles();
 
+  // here is the card on the screen thats the chatbox i set a minimum height so it fills the screen and added overflow auto so as people type into the chat they can scroll to look back.
+
   return (
     <Card
     
       {...rest}
       className={clsx(classes.root, className)}
     >
+
+      {/* title of the card is here */}
       <CardHeader
        
         title="Chat Log"
@@ -46,15 +50,14 @@ const Chatbox = props => {
           overflow: 'auto'
         }}
       >
-
-      
-
+{/* input data for the Chat goes here to pring on screen */}
         <p>Some Chat text in here</p>
+
       </CardContent>
       <Divider />
       <CardActions className={classes.actions}>
        
-
+       {/* this is the text input box, helpertext is like placeholder so its been removed. */}
         <TextField
           fullWidth
           id="outlined-full-width"
