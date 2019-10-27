@@ -53,7 +53,7 @@ const LatestSales = props => {
       <Divider />
       <CardContent
         style={{
-          minHeight: 680,
+          minHeight: 560,
           overflow: 'auto'
         }}
       >

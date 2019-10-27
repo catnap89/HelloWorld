@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
 
 import {
- 
+ TotalUsers,
   LatestSales,
   UsersByDevice,
   
@@ -44,15 +44,15 @@ const Dashboard = () => {
         >
           <UsersByDevice />
         </Grid>
-        {/* <Grid */}
-        {/* item
+        <Grid
+        item
           // lg={8}
           // sm={6}
           // xl={3}
           xs={12}
         >
           <TotalUsers />
-        </Grid> */}
+        </Grid>
         
       
       </Grid>

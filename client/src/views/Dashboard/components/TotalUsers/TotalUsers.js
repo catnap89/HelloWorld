@@ -2,9 +2,9 @@ import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
+import { Card, CardContent, Grid, Typography } from '@material-ui/core';
 // import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
-import PeopleIcon from '@material-ui/icons/PeopleOutlined';
+// import PeopleIcon from '@material-ui/icons/PeopleOutlined';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -17,15 +17,15 @@ const useStyles = makeStyles(theme => ({
   title: {
     fontWeight: 700
   },
-  // avatar: {
-  //   backgroundColor: theme.palette.success.main,
-  //   height: 56,
-  //   width: 56
-  // },
-  // icon: {
-  //   height: 32,
-  //   width: 32
-  // },
+  avatar: {
+    backgroundColor: theme.palette.success.main,
+    height: 56,
+    width: 56
+  },
+  icon: {
+    height: 32,
+    width: 32
+  },
   difference: {
     marginTop: theme.spacing(2),
     display: 'flex',
@@ -56,37 +56,37 @@ const TotalUsers = props => {
           justify="space-between"
         >
           <Grid item>
-            {/* <Typography
+            <Typography
               className={classes.title}
               color="textSecondary"
               gutterBottom
               variant="body2"
             >
               TOTAL USERS
-            </Typography> */}
-            {/* <Typography variant="h3">1,600</Typography> */}
+            </Typography> 
+            <Typography variant="h3">1,600</Typography>
           </Grid>
           <Grid item>
-            <Avatar className={classes.avatar}>
+            {/* <Avatar className={classes.avatar}>
               <PeopleIcon className={classes.icon} />
-            </Avatar> 
+            </Avatar>  */}
           </Grid>
         </Grid>
-        <div className={classes.difference}>
-          {/* <ArrowUpwardIcon className={classes.differenceIcon} /> */}
+        {/* <div className={classes.difference}>
+          <ArrowUpwardIcon className={classes.differenceIcon} />
           <Typography
             className={classes.differenceValue}
             variant="body2"
           >
-            {/* 16% */}
+            16%
           </Typography>
           <Typography
             className={classes.caption}
             variant="caption"
           >
-            {/* Since last month */}
+             Since last month
           </Typography>
-        </div>
+        </div> */}
       </CardContent>
     </Card>
   );
