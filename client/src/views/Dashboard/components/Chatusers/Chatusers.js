@@ -38,7 +38,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const UsersByDevice = props => {
+const Chatusers = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -87,8 +87,8 @@ const UsersByDevice = props => {
   );
 };
 
-UsersByDevice.propTypes = {
+Chatusers.propTypes = {
   className: PropTypes.string
 };
 
-export default UsersByDevice;
+export default Chatusers;

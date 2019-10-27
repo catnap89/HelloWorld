@@ -9,13 +9,9 @@ import {
   CardContent,
   CardActions,
   Divider,
-  Button,
+  // Button,
   TextField
 } from '@material-ui/core';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-// import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-
-// import { data, options } from './chart';
 
 const useStyles = makeStyles(() => ({
   root: {},
@@ -28,7 +24,7 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const LatestSales = props => {
+const Chatbox = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
@@ -40,14 +36,7 @@ const LatestSales = props => {
       className={clsx(classes.root, className)}
     >
       <CardHeader
-        action={
-          <Button
-            size="small"
-            variant="text"
-          >
-            Last 7 days <ArrowDropDownIcon />
-          </Button>
-        }
+       
         title="Chat Log"
       />
       <Divider />
@@ -88,8 +77,8 @@ const LatestSales = props => {
   );
 };
 
-LatestSales.propTypes = {
+Chatbox.propTypes = {
   className: PropTypes.string
 };
 
-export default LatestSales;
+export default Chatbox;
