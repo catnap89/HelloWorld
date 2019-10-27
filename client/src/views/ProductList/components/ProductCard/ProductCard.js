@@ -63,14 +63,18 @@ const ProductCard = props => {
         >
           {product.title}
         </Typography>
+        <Divider />
         <Typography
-          align="center"
+          // align="center"
           variant="body1"
         >
           {product.description}
         </Typography>
+        
+
+
       </CardContent>
-      <Divider />
+      
       <CardActions>
         <Grid
           container
