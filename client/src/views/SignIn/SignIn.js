@@ -14,7 +14,7 @@ import {
 
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-import { Facebook as FacebookIcon, Google as GoogleIcon } from 'icons';
+import { Google as GoogleIcon } from 'icons';
 
 const schema = {
   email: {
@@ -186,56 +186,11 @@ const SignIn = props => {
         className={classes.grid}
         container
       >
-        <Grid
-          className={classes.quoteContainer}
-          item
-          lg={5}
-        >
-          <div className={classes.quote}>
-            <div className={classes.quoteInner}>
-            <img
-       style= {{height: '200px'}}
-        alt="Logo"
-        src="/images/logos/Ch@.png"
-          />
-          <br/>
-          <br/>
-              <Typography
-                className={classes.quoteText}
-                variant="h1"
-              >
-               Welcome back, Enjoy your Ch@!!!
-              </Typography>
-             
-              <div className={classes.person}>
-                <Typography
-                  className={classes.name}
-                  variant="body1"
-                >
-                  The Dev Team:
-                </Typography>
-                <br/>
-                <Typography
-                  className={classes.bio}
-                  variant="body1"
-                  fontWeight="fontWeightBold"
-                >
-                  Daniel Cho -
-                  Ryan Wiengart -
-                  Khavin Lindo -
-                  Trey Helmer 
-                 
-                </Typography>
-
-               
-              </div>
-            </div>
-          </div>
-        </Grid>
+        
         <Grid
           className={classes.content}
           item
-          lg={7}
+          lg={6}
           xs={12}
         >
           <div className={classes.content}>
@@ -351,6 +306,52 @@ const SignIn = props => {
                   </Link>
                 </Typography>
               </form>
+            </div>
+          </div>
+        </Grid>
+        <Grid
+          className={classes.quoteContainer}
+          item
+          lg={6}
+        >
+          <div className={classes.quote}>
+            <div className={classes.quoteInner}>
+            <img
+       style= {{height: '200px'}}
+        alt="Logo"
+        src="/images/logos/Ch@.png"
+          />
+          <br/>
+          <br/>
+              <Typography
+                className={classes.quoteText}
+                variant="h1"
+              >
+               Welcome Back, Enjoy your <strong>Ch@</strong>!!!
+              </Typography>
+             
+              <div className={classes.person}>
+                <Typography
+                  className={classes.name}
+                  variant="body1"
+                >
+                  <strong>The Dev Team:</strong>
+                </Typography>
+                <br/>
+                <Typography
+                  className={classes.bio}
+                  variant="body1"
+                  fontWeight="fontWeightBold"
+                >
+                  <strong>Daniel Cho</strong> -
+                  <strong> Ryan Wiengart</strong> -
+                  <strong> Khavin Lindo</strong> -
+                  <strong> Trey Helmer </strong>
+                 
+                </Typography>
+
+               
+              </div>
             </div>
           </div>
         </Grid>

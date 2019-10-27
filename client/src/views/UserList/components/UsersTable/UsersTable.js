@@ -8,7 +8,7 @@ import {
   Card,
   CardActions,
   CardContent,
-  Avatar,
+  // Avatar,
   Checkbox,
   Table,
   TableBody,
@@ -19,7 +19,7 @@ import {
   TablePagination
 } from '@material-ui/core';
 
-import { getInitials } from 'helpers';
+
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -33,9 +33,9 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center'
   },
-  avatar: {
-    marginRight: theme.spacing(2)
-  },
+  // avatar: {
+  //   marginRight: theme.spacing(2)
+  // },
   actions: {
     justifyContent: 'flex-end'
   }
@@ -135,16 +135,16 @@ const UsersTable = props => {
                         color="primary"
                         onChange={event => handleSelectOne(event, user.id)}
                         value="true"
-                      />
+                      /> 
                     </TableCell>
                     <TableCell>
                       <div className={classes.nameContainer}>
-                        <Avatar
+                         {/* <Avatar
                           className={classes.avatar}
                           src={user.avatarUrl}
                         >
                           {getInitials(user.name)}
-                        </Avatar>
+                        </Avatar>  */}
                         <Typography variant="body1">{user.name}</Typography>
                       </div>
                     </TableCell>

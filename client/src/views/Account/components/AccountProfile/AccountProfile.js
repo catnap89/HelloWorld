@@ -5,13 +5,13 @@ import moment from 'moment';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
-  CardActions,
+  // CardActions,
   CardContent,
-  Avatar,
+  // Avatar,
   Typography,
   Divider,
-  Button,
-  LinearProgress
+  // Button,
+  // LinearProgress
 } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
@@ -44,7 +44,7 @@ const AccountProfile = props => {
     city: 'Los Angeles',
     country: 'USA',
     timezone: 'GTM-7',
-    avatar: '/images/avatars/avatar_11.png'
+    // avatar: '/images/avatars/avatar_11.png'
   };
 
   return (
@@ -59,7 +59,7 @@ const AccountProfile = props => {
               gutterBottom
               variant="h2"
             >
-              John Doe
+              {user.name}
             </Typography>
             <Typography
               className={classes.locationText}
@@ -76,31 +76,33 @@ const AccountProfile = props => {
               {moment().format('hh:mm A')} ({user.timezone})
             </Typography>
           </div>
-          <Avatar
+          {/* <Avatar
             className={classes.avatar}
             src={user.avatar}
-          />
+          /> */}
         </div>
-        <div className={classes.progress}>
+        {/* <div className={classes.progress}>
           <Typography variant="body1">Profile Completeness: 70%</Typography>
           <LinearProgress
             value={70}
             variant="determinate"
           />
-        </div>
+        </div> */}
+
       </CardContent>
       <Divider />
-      <CardActions>
-        <Button
+      {/* <CardActions> */}
+        {/* <Button
           className={classes.uploadButton}
           color="primary"
           variant="text"
         >
           Upload picture
         </Button>
-        <Button variant="text">Remove picture</Button>
-      </CardActions>
+        <Button variant="text">Remove picture</Button> */}
+      {/* </CardActions> */}
     </Card>
+
   );
 };
 

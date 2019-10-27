@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
@@ -7,28 +8,28 @@ import {
   CardContent,
   CardActions,
   Typography,
-  Grid,
-  Divider
+  // Grid,
+  Divider,
+  Button,
 } from '@material-ui/core';
-import AccessTimeIcon from '@material-ui/icons/AccessTime';
-import GetAppIcon from '@material-ui/icons/GetApp';
+
 
 const useStyles = makeStyles(theme => ({
   root: {},
-  imageContainer: {
-    height: 64,
-    width: 64,
-    margin: '0 auto',
-    border: `1px solid ${theme.palette.divider}`,
-    borderRadius: '5px',
-    overflow: 'hidden',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  image: {
-    width: '100%'
-  },
+  // imageContainer: {
+  //   height: 60,
+  //   width: 60,
+  //   margin: '0 auto',
+  //   border: `1px solid ${theme.palette.divider}`,
+  //   borderRadius: '5px',
+  //   overflow: 'hidden',
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   justifyContent: 'center'
+  // },
+  // image: {
+  //   width: '100%'
+  // },
   statsItem: {
     display: 'flex',
     alignItems: 'center'
@@ -50,13 +51,7 @@ const ProductCard = props => {
       className={clsx(classes.root, className)}
     >
       <CardContent>
-        <div className={classes.imageContainer}>
-          <img
-            alt="Product"
-            className={classes.image}
-            src={product.imageUrl}
-          />
-        </div>
+      
         <Typography
           align="center"
           gutterBottom
@@ -64,44 +59,30 @@ const ProductCard = props => {
         >
           {product.title}
         </Typography>
+
+        <Divider />
+        
         <Typography
-          align="center"
+          // align="center"
           variant="body1"
         >
           {product.description}
         </Typography>
+        
+
+
       </CardContent>
-      <Divider />
+      
       <CardActions>
-        <Grid
+        {/* <Grid
           container
           justify="space-between"
-        >
-          <Grid
-            className={classes.statsItem}
-            item
-          >
-            <AccessTimeIcon className={classes.statsIcon} />
-            <Typography
-              display="inline"
-              variant="body2"
-            >
-              Updated 2hr ago
-            </Typography>
-          </Grid>
-          <Grid
-            className={classes.statsItem}
-            item
-          >
-            <GetAppIcon className={classes.statsIcon} />
-            <Typography
-              display="inline"
-              variant="body2"
-            >
-              {product.totalDownloads} Downloads
-            </Typography>
-          </Grid>
-        </Grid>
+        > */}
+        <RouterLink to="/">
+         <Button   size="small">Join Chat</Button>
+        </RouterLink>
+
+        {/* </Grid> */}
       </CardActions>
     </Card>
   );

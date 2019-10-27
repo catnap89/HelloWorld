@@ -3,11 +3,11 @@ import { Link as RouterLink } from 'react-router-dom';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
-import { AppBar, Toolbar, Badge, Hidden, IconButton } from '@material-ui/core';
+import { AppBar, Toolbar, Badge, Hidden, IconButton, Button } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
-import Typography from '@material-ui/core/Typography'
+// import Typography from '@material-ui/core/Typography'
 // import { colors } from '@material-ui/core';
 // import orange from '@material-ui/core/colors/orange';
 
@@ -41,20 +41,7 @@ const Topbar = props => {
       <Toolbar>
         <RouterLink to="/">
 
-          {/* <Typography 
-            style = {{
-            // Some CSS
-              color: 'white',
-              fontWeight: 'bold'
-            }}
-            
-            variant="h2"
-          
-            
-          >
-                         Ch@
-          </Typography>
-               */}
+         
        <img
        style= {{height: '70px'}}
         alt="Logo"
@@ -62,6 +49,10 @@ const Topbar = props => {
           />
         </RouterLink>
         <div className={classes.flexGrow} />
+
+        <RouterLink to="/sign-in">
+        <Button style={{marginRight:'15px'}} variant="outlined" color="inherit">Login</Button>
+        </RouterLink> 
         <Hidden mdDown>
           <IconButton color="inherit">
             <Badge
