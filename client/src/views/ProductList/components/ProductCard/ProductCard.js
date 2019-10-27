@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
@@ -7,27 +8,28 @@ import {
   CardContent,
   CardActions,
   Typography,
-  Grid,
-  Divider
+  // Grid,
+  Divider,
+  Button,
 } from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
   root: {},
-  imageContainer: {
-    height: 60,
-    width: 60,
-    margin: '0 auto',
-    border: `1px solid ${theme.palette.divider}`,
-    borderRadius: '5px',
-    overflow: 'hidden',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  image: {
-    width: '100%'
-  },
+  // imageContainer: {
+  //   height: 60,
+  //   width: 60,
+  //   margin: '0 auto',
+  //   border: `1px solid ${theme.palette.divider}`,
+  //   borderRadius: '5px',
+  //   overflow: 'hidden',
+  //   display: 'flex',
+  //   alignItems: 'center',
+  //   justifyContent: 'center'
+  // },
+  // image: {
+  //   width: '100%'
+  // },
   statsItem: {
     display: 'flex',
     alignItems: 'center'
@@ -49,13 +51,7 @@ const ProductCard = props => {
       className={clsx(classes.root, className)}
     >
       <CardContent>
-        {/* <div className={classes.imageContainer}> */}
-          {/* <img
-            alt="Product"
-            className={classes.image}
-            src={product.imageUrl}
-          /> */}
-        {/* </div> */}
+      
         <Typography
           align="center"
           gutterBottom
@@ -63,7 +59,9 @@ const ProductCard = props => {
         >
           {product.title}
         </Typography>
+
         <Divider />
+        
         <Typography
           // align="center"
           variant="body1"
@@ -76,12 +74,15 @@ const ProductCard = props => {
       </CardContent>
       
       <CardActions>
-        <Grid
+        {/* <Grid
           container
           justify="space-between"
-        >
-       
-        </Grid>
+        > */}
+        <RouterLink to="/">
+         <Button   size="small">Join Chat</Button>
+        </RouterLink>
+
+        {/* </Grid> */}
       </CardActions>
     </Card>
   );
