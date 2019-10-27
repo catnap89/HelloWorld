@@ -9,8 +9,8 @@ import {
   CardActions,
   Grid,
   Divider,
-  FormControlLabel,
-  Checkbox,
+  // FormControlLabel,
+  // Checkbox,
   Typography,
   Button
 } from '@material-ui/core';
@@ -58,7 +58,7 @@ const Notifications = props => {
               >
                 Notifications
               </Typography>
-              <FormControlLabel
+              {/* <FormControlLabel
                 control={
                   <Checkbox
                     color="primary"
@@ -88,7 +88,7 @@ const Notifications = props => {
                   />
                 }
                 label="Phone calls"
-              />
+              /> */}
             </Grid>
             <Grid
               className={classes.item}
@@ -103,7 +103,7 @@ const Notifications = props => {
               >
                 Messages
               </Typography>
-              <FormControlLabel
+              {/* <FormControlLabel
                 control={
                   <Checkbox
                     color="primary"
@@ -124,7 +124,7 @@ const Notifications = props => {
                   />
                 }
                 label="Phone calls"
-              />
+              /> */}
             </Grid>
           </Grid>
         </CardContent>
