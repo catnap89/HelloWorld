@@ -364,7 +364,7 @@ const SignUp = props => {
                 className={classes.quoteText}
                 variant="h1"
               >
-                 Welcome to Ch@, please register and enjoy your stay.  We hope you have a wonderful time. 
+                 Welcome to <strong>Ch@</strong>, please register and enjoy your stay.  We hope you have a wonderful time. 
 
                 
               </Typography>
@@ -373,17 +373,17 @@ const SignUp = props => {
                   className={classes.name}
                   variant="body1"
                 >
-                 The Dev Team:
+                 <strong>The Dev Team:</strong>
                 </Typography>
                 <br/>
                 <Typography
                   className={classes.bio}
                   variant="body1"
                 >
-                  Daniel Cho -
-                  Ryan Wiengart -
-                  Khavin Lindo -
-                  Trey Helmer 
+                 <strong>Daniel Cho </strong> -
+                  <strong> Ryan Wiengart </strong> -
+                  <strong> Khavin Lindo </strong> -
+                  <strong> Trey Helmer </strong>
                 </Typography>
               </div>
             </div>

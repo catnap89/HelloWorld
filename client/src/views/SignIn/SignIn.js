@@ -327,7 +327,7 @@ const SignIn = props => {
                 className={classes.quoteText}
                 variant="h1"
               >
-               Welcome back, Enjoy your Ch@!!!
+               Welcome Back, Enjoy your <strong>Ch@</strong>!!!
               </Typography>
              
               <div className={classes.person}>
@@ -335,7 +335,7 @@ const SignIn = props => {
                   className={classes.name}
                   variant="body1"
                 >
-                  The Dev Team:
+                  <strong>The Dev Team:</strong>
                 </Typography>
                 <br/>
                 <Typography
@@ -343,10 +343,10 @@ const SignIn = props => {
                   variant="body1"
                   fontWeight="fontWeightBold"
                 >
-                  Daniel Cho -
-                  Ryan Wiengart -
-                  Khavin Lindo -
-                  Trey Helmer 
+                  <strong>Daniel Cho</strong> -
+                  <strong> Ryan Wiengart</strong> -
+                  <strong> Khavin Lindo</strong> -
+                  <strong> Trey Helmer </strong>
                  
                 </Typography>
 
