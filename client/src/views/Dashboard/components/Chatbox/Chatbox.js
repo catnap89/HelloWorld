@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-// import { Bar } from 'react-chartjs-2';
+
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
@@ -9,13 +9,9 @@ import {
   CardContent,
   CardActions,
   Divider,
-  Button,
+  
   TextField
 } from '@material-ui/core';
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-// import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-
-// import { data, options } from './chart';
 
 const useStyles = makeStyles(() => ({
   root: {},
@@ -28,10 +24,12 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const LatestSales = props => {
+const Chatbox = props => {
   const { className, ...rest } = props;
 
   const classes = useStyles();
+
+  // here is the card on the screen thats the chatbox i set a minimum height so it fills the screen and added overflow auto so as people type into the chat they can scroll to look back.
 
   return (
     <Card
@@ -39,15 +37,10 @@ const LatestSales = props => {
       {...rest}
       className={clsx(classes.root, className)}
     >
+
+      {/* title of the card is here */}
       <CardHeader
-        action={
-          <Button
-            size="small"
-            variant="text"
-          >
-            Last 7 days <ArrowDropDownIcon />
-          </Button>
-        }
+       
         title="Chat Log"
       />
       <Divider />
@@ -57,15 +50,14 @@ const LatestSales = props => {
           overflow: 'auto'
         }}
       >
-
-      
-
+{/* input data for the Chat goes here to pring on screen */}
         <p>Some Chat text in here</p>
+
       </CardContent>
       <Divider />
       <CardActions className={classes.actions}>
        
-
+       {/* this is the text input box, helpertext is like placeholder so its been removed. */}
         <TextField
           fullWidth
           id="outlined-full-width"
@@ -88,8 +80,8 @@ const LatestSales = props => {
   );
 };
 
-LatestSales.propTypes = {
+Chatbox.propTypes = {
   className: PropTypes.string
 };
 
-export default LatestSales;
+export default Chatbox;

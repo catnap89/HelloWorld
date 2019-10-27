@@ -4,8 +4,8 @@ import { Grid } from '@material-ui/core';
 
 import {
 
-  LatestSales,
-  UsersByDevice,
+  Chatbox,
+  Chatusers,
   
 } from './components';
 
@@ -32,7 +32,7 @@ const Dashboard = () => {
           xl={9}
           xs={12}
         >
-          <LatestSales />
+          <Chatbox />
         </Grid>
         <Grid
           item
@@ -42,17 +42,9 @@ const Dashboard = () => {
           xs={12}
           
         >
-          <UsersByDevice />
+          <Chatusers />
         </Grid>
-        {/* <Grid
-        item
-          // lg={8}
-          // sm={6}
-          // xl={3}
-          xs={12}
-        >
-      
-        </Grid> */}
+       
         
       
       </Grid>

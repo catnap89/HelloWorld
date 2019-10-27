@@ -1,4 +1,4 @@
 
-export { default as LatestSales } from './LatestSales';
+export { default as Chatbox } from './Chatbox';
 
-export { default as UsersByDevice } from './UsersByDevice';
+export { default as Chatusers } from './Chatusers';
