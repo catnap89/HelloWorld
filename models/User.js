@@ -1,54 +1,54 @@
 
-
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-    firstName = {
+    
+    firstName : {
         type: String,
-        required: true,
+        required: true
     }, 
 
-    lastName = {
+    lastName : {
         type: String,
         required: true
     },
 
-    username = {
+    username : {
         type: String,
         required: true,
         unqiue: true
     },
 
-    password = {
+    password : {
         type: String,
         required: true,
         unique: true
     },
 
-    joinedCommunityIDs = {
+    joinedCommunityIDs : {
         type: Array,
         required: true
     },
 
-    ownedCommunityIDs = {
+    ownedCommunityIDs : {
         type: Array,
         required: true
     },
 
-    bannedCommunityIDs = {
+    bannedCommunityIDs : {
         type: Array,
         required: true
     },
 
-    isAdmin = {
+    isAdmin : {
        type: Boolean,
        required: true
     },
 
 });
 
-var User = mongoose("User", userSchema);
+var User = mongoose.model("User", userSchema);
 
 module.exports = User;

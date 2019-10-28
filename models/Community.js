@@ -4,7 +4,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 var communitySchema =  new Schema({
-    communityName : {
+    
+  communityName : {
         type: String,
         required: true,
         unique: true
@@ -15,9 +16,10 @@ var communitySchema =  new Schema({
     //     required: true
     // },
 
-    admin: {
-      type: Schema.Types.ObjectId,
-      ref: "User"
+    userAdmin: {
+      type: String,
+      required: true,
+      unique: true
     },
 
     bannedList: {
