@@ -15,7 +15,7 @@ var userSchema = new Schema({
         required: true
     },
 
-    username : {
+    userName : {
         type: String,
         required: true,
         unqiue: true
@@ -46,6 +46,11 @@ var userSchema = new Schema({
        type: Boolean,
        required: true
     },
+
+    favoriteCommunityIDs : {
+        type: Array,
+        required: true
+    }
 
 });
 

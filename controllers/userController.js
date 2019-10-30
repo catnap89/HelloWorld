@@ -12,12 +12,13 @@ module.exports = {
             var newUser = {
                 firstName : data.firstName,  
                 lastName : data.lastName,
-                username : data.username,
+                userName : data.username,
                 password : data.password,
                 joinedCommunityIDs : data.joinedCommunityIDs,
                 ownedCommunityIDs : data.ownedCommunityIDs,
                 bannedCommunityIDs : data.bannedCommunityIDs,
-                isAdmin : data.isAdmin
+                isAdmin : data.isAdmin,
+                favoriteCommunityIDs : data.favoriteCommunityIDs
             };
 
             User.create(newUser, function (err, doc) {
@@ -33,12 +34,12 @@ module.exports = {
         },
 
     delete: function(data, callback) {
-            User.remove({username: data.username}, callback);
+            User.remove({userName: data.userName}, callback);
         },
     
         
     update: function(query, callback) {
-            Community.update({username: username}, {$set:query}, {}, callback);
+            Community.update({userName: userName}, {$set:query}, {}, callback);
             }
         
     };
